@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>excercise intermediate2</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>フォームレッスン</h1>
+        <p>以下のフォームを埋めてください。（※は必須項目）</p>
+        <label for="username">※ユーザー名:</label>
+        <input type="text" id="username" name="username" required>
+        <div>
+            <label for="password">※パスワード（6文字以上）:</label>
+            <input type="password" id="password" required minlength="6">
+        </div>
+        <div>
+            ※性別:
+            <input type="radio" name="gen" id="r1" required value="female">
+            <label for="r1">女性</label>
+            <input type="radio" name="gen" id="r2" required value="male">
+            <label for="r2">男性</label>
+        </div>
+
+        <div>
+            ※生年月日
+            <label for="year">年：</label>
+            <select name="year" id="year" required>
+                <option value="">---</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+            </select>
+            </label>
+            <label>月：
+                <select name="month" id="month" required>
+                    <option value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="12">12</option>
+                </select>
+            </label>
+            <label>日：
+                <select name="day" id="day" required>
+                    <option value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="12">12</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="textbox">備考欄：</label>
+            <div>
+                <textarea name="textbox" id="textbox" cols="30" rows="10">
+                </textarea>
+            </div>
+        </div>
+        <p>
+            <button>送信</button>
+        </p>
+    </form>
+</body>
+
+</html>
