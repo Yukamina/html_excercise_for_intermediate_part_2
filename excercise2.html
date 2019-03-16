@@ -7,20 +7,22 @@
 </head>
 
 <body>
+    <h1>フォームレッスン</h1>
     <form action="">
-        <h1>フォームレッスン</h1>
         <p>以下のフォームを埋めてください。（※は必須項目）</p>
-        <label for="username">※ユーザー名:</label>
-        <input type="text" id="username" name="username" required>
+        <div>
+            <label for="username">※ユーザー名:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
         <div>
             <label for="password">※パスワード（6文字以上）:</label>
-            <input type="password" id="password" required minlength="6">
+            <input type="password" id="password" name="password" required minlength="6">
         </div>
         <div>
             ※性別:
-            <input type="radio" name="gen" id="r1" required value="female">
+            <input type="radio" name="gender" id="r1" required value="female">
             <label for="r1">女性</label>
-            <input type="radio" name="gen" id="r2" required value="male">
+            <input type="radio" name="gender" id="r2" required value="male">
             <label for="r2">男性</label>
         </div>
 
@@ -54,9 +56,9 @@
             </label>
         </div>
         <div>
-            <label for="textbox">備考欄：</label>
+            <label for="remarks">備考欄：</label>
             <div>
-                <textarea name="textbox" id="textbox" cols="30" rows="10">
+                <textarea name="remarks" id="remarks" cols="30" rows="10">
                 </textarea>
             </div>
         </div>
